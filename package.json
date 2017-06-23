@@ -9,7 +9,7 @@
     "start": "concurrently \"npm run webpack-server\" \"gulp watch\"",
     "build": "set NODE_ENV=production && webpack -p --progress && gulp"
   },
-	"author": {
+  "author": {
     "name": "Divyanshu Maithani",
     "email": "div.blackcat@gmail.com",
     "url": "https://github.com/divyanshu013"
@@ -49,6 +49,8 @@
     "json-loader": "^0.5.4",
     "shebang-loader": "0.0.1",
     "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"

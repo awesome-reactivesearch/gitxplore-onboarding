@@ -6,28 +6,29 @@ import {
 	MultiDropdownList,
 	RangeSlider
 } from '@appbaseio/reactivesearch';
-import { dataOperation } from "../service/DataOperation";
 import moment from "moment";
 
-require("./styles.scss");
+import { dataOperation } from "../service/DataOperation";
+import './Base.styl'
 
 export class LiveExample extends Component {
+
 	onData(res) {
-		console.log(res)
 		const result = {
 			image: res.avatar,
 			desc: (
 				<div className="card-layout">
-					<div className="card-title">{res.repo}</div>
-					<div className="card-stars">{res.stars} 🌟s</div>
-					<div className="card-creator">Created by {res.owner}</div>
-					<div className="card-date">Created on <strong>{(() => {
-						const date =  new Date(res['created-on'])
-						return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
-					})()}</strong></div>
+					<div className="card-title"><a href={res.url} target="_blank">{res.owner}/<br />{res.repo}</a></div>
+					<a href={res.url} target="_blank">
+						<div className="card-stars">
+							<i className="fa fa-star" aria-hidden="true" />{res.stars}
+						</div>
+					</a>
+					<div className="card-tags">
+						{res.tags.map(tag => <span className="card-tag">#{tag}</span>)}
+					</div>
 				</div>
-			),
-			url: res.url
+			)
 		};
 		return result;
 	}
@@ -62,7 +63,7 @@ export class LiveExample extends Component {
 								defaultSelected={[]}
 							/>
 							<RangeSlider
-								title="Stars 🌠"
+								title="Repo Stars"
 								componentId="RangeSliderSensor"
 								appbaseField="stars"
 								initialLoader="Loading data..."
@@ -75,6 +76,10 @@ export class LiveExample extends Component {
 									"start": 0,
 									"end": 70000
 								}}
+								rangeLabels={{
+									"start": "0 Stars",
+									"end": "70K Stars"
+								}}
 								stepValue={50}
 							/>
 						</div>
@@ -84,10 +89,11 @@ export class LiveExample extends Component {
 					<ResultCard
 						componentId="SearchResult"
 						appbaseField="repo"
-						title="Results"
 						initialLoader="Loading data..."
 						noResults="Oops! Nothing found."
 						pagination={true}
+						size={12}
+						paginationAt="top"
 						onData={this.onData}
 						react={{
 							and: ["SearchSensor", "TagSensor", "RangeSliderSensor"]
@@ -102,6 +108,16 @@ export class LiveExample extends Component {
 								label: "Lowest rated",
 								appbaseField: "stars",
 								sortBy: "asc"
+							},
+							{
+								label: "Alphabetic",
+								appbaseField: "owner",
+								sortBy: "asc"
+							},
+							{
+								label: "Reverse alphabetic",
+								appbaseField: "owner",
+								sortBy: "desc"
 							},
 							{
 								label: "Most recent",

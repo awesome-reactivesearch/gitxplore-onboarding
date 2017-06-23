@@ -43,6 +43,12 @@ header .title h6 {
 	padding: 10px;
 }
 
+.rc-slider-mark-text {
+	color: #fff;
+	width: 25% !important;
+	margin-left: -15% !important;
+}
+
 .search-params {
 	display: flex;
 	width: 80%;
@@ -79,6 +85,7 @@ header .title h6 {
 	box-shadow: none;
 	flex: 1;
 	padding-top: 10px;
+	z-index: 2;
 }
 
 .search-params .rbc-multidropdownlist .rbc-title {
@@ -91,16 +98,64 @@ header .title h6 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+}
+
+.card-layout .card-tags {
+	display: flex;
+	width: 200px;
+	flex-wrap: wrap;
+	font-weight: bold;
+	justify-content: center;
+	flex-direction: row !important;
+}
+
+.card-layout .card-tags .card-tag {
+	padding: 0 2px;
 }
 
 .card-layout .card-title {
 	padding: 2px;
+	width: 200px;
+	display: inline-block !important;
 	color: #3cb371;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+
+.card-layout .card-title:hover {
+	color: #008000;
 }
 
 .card-layout .card-stars {
-	padding: 2px;
+	font-size: 18px;
+	padding: 10px;
+	margin: 10px;
 	font-weight: bold;
+	background-color: #3cb371;
+	color: #fff;
+	border-radius: 10px;
+	flex-direction: row !important;
+}
+
+.card-layout .card-stars:hover {
+	background-color: #008000;
+}
+
+.card-layout .card-stars .fa-star {
+	margin-right: 10px;
+	margin-top: 2px;
+}
+
+.card-layout a {
+	text-decoration: none;
+	color: #3cb371;
+}
+
+.card-layout a:hover {
+	color: #008000;
 }
 
 .rbc-resultcard {
@@ -113,18 +168,21 @@ header .title h6 {
 }
 
 .rbc-resultcard .rbc-resultcard-item {
-	margin: 5px;
+	margin: 15px;
 	min-height: auto;
 	max-width: 400px;
-	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .rbc-resultcard .rbc-resultcard-item div {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .rbc-resultcard .rbc-resultcard-item:hover {
-	border: 1px solid #3cb371;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .rbc-resultcard .rbc-resultcard-item__image {
@@ -149,7 +207,7 @@ header .title h6 {
 	}
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 800px) {
 	.rbc-resultcard .rbc-resultcard-item__image {
 		min-width: 100px;
 		min-height: 100px;
@@ -159,7 +217,7 @@ header .title h6 {
 	}
 
 	.rbc-resultcard .rbc-resultcard-item {
-		margin: 5px;
+		margin: 10px;
 		max-width: 250px;
 	}
 

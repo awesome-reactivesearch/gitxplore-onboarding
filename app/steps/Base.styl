@@ -1,0 +1,172 @@
+$darkseagreen = #008000
+
+body
+  height 100vh
+
+header
+  background-color mediumseagreen
+  color white
+  display flex
+  // padding-bottom: 60px
+  flex-direction column
+  padding-left 10px
+  .title
+    display flex
+    align-items baseline
+    justify-content center
+    h3
+      font-family 'Monoton', cursive
+
+    h6
+      font-family 'Raleway', sans-serif
+
+.footer
+  font-family 'Raleway', sans-serif
+  text-align center
+  .go-green
+    color mediumseagreen
+
+.rbc-base
+  display flex
+  height 100%
+  flex-direction column
+
+.rbc-resultstats
+  padding 10px
+
+
+.rc-slider-mark-text
+  color white
+  width 25% !important
+  margin-left -15% !important
+
+.search-params
+  display flex
+  width 80%
+  align-self center
+  .search-filters
+    display flex
+    flex 1.7
+  .rbc-categorysearch
+    flex 1
+    background-color mediumseagreen
+    box-shadow none
+
+    .rbc-title
+      color white
+
+  .rbc-rangeslider
+    background-color mediumseagreen
+    box-shadow none
+    flex 1
+
+    .rbc-title
+      color white
+
+  .rbc-multidropdownlist
+    background-color mediumseagreen
+    box-shadow none
+    flex 1
+    padding-top 10px
+    z-index 2
+    .rbc-title
+      color white
+
+.card-layout
+  padding 10px
+  margin 10px
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  .card-tags
+    display flex
+    width 200px
+    flex-wrap wrap
+    font-weight bold
+    justify-content center
+    flex-direction: row !important
+    .card-tag
+      padding 0 2px
+  .card-title
+    padding 2px
+    width 200px
+    display inline-block !important;
+    color mediumseagreen
+    white-space nowrap
+    overflow: hidden
+    text-overflow ellipsis
+    text-align center
+    &:hover
+      color $darkseagreen
+  .card-stars
+    font-size 18px
+    padding 10px
+    margin 10px
+    font-weight bold
+    background-color mediumseagreen
+    color white
+    border-radius 10px
+    flex-direction: row !important
+    &:hover
+      background-color $darkseagreen
+    .fa-star
+      margin-right 10px
+      margin-top 2px
+  a
+    text-decoration none
+    color mediumseagreen
+    &:hover
+      color $darkseagreen
+
+.rbc-resultcard
+  height calc(100% - 1vh)
+  .rbc-resultcard-container
+    box-shadow none
+    padding 5px
+  .rbc-resultcard-item
+    margin 15px
+    min-height auto
+    max-width 400px
+    box-shadow 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+    transition all 0.3s cubic-bezier(.25,.8,.25,1)
+    div
+      display flex
+      align-items center
+      justify-content center
+    &:hover
+      box-shadow 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+  .rbc-resultcard-item__image
+    flex 1
+    min-width 130px
+    margin-left 20px
+
+.rbc-pagination
+  text-align center
+
+@media all and (max-width: 1200px)
+  .search-params
+    width 85%
+
+@media all and (max-width: 900px)
+  .search-params
+    flex-direction column
+
+@media all and (max-width: 800px)
+  .rbc-resultcard
+    .rbc-resultcard-item__image
+      min-width 100px
+      min-height 100px
+      max-width 130px
+      max-height 130px
+      margin 10px
+    .rbc-resultcard-item
+      margin 10px
+      max-width 250px
+      div
+        flex-direction column
+        align-items center
+
+@media all and (max-width: 480px)
+  .search-filters
+    flex-direction column

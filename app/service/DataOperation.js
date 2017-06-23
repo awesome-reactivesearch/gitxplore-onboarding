@@ -182,6 +182,7 @@ class DataOperation {
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
 	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyC-v0oz7Pay_ltypZbKasABXGiY9NlpCIY&libraries=places"></script>
 	<script type="text/javascript" src="https://cdn.rawgit.com/appbaseio/reactivesearch/master/umd/ReactiveSearch.js"></script>
+	<script src="https://use.fontawesome.com/87f7b0243f.js"></script>
 </head>
 <body>
 	<div id="root"></div>
@@ -201,7 +202,8 @@ class DataOperation {
 			'https://cdn.rawgit.com/appbaseio/reactivesearch/master/umd/ReactiveSearch.js',
 			'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css',
 			'https://rawgit.com/appbaseio/reactivesearch/master/dist/css/style.min.css',
-			'https://fonts.googleapis.com/css?family=Monoton|Raleway'
+			'https://fonts.googleapis.com/css?family=Monoton|Raleway',
+			'https://use.fontawesome.com/87f7b0243f.js'
 		];
 		return resources.join(',');
 	}
