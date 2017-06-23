@@ -45,7 +45,7 @@ header .title h6 {
 
 .rc-slider-mark-text {
 	color: #fff;
-	width: 25% !important;
+	width: 32% !important;
 	margin-left: -15% !important;
 }
 
