@@ -4,6 +4,7 @@ import { SampleCSS } from "../service/SampleCSS";
 import { JsonView } from "../others/JsonView";
 import { Tabs, Tab } from "react-bootstrap";
 import LivePen from "./LivePen";
+import LiveExample from "./LiveExample";
 
 export class LiveFiddle extends Component {
 	constructor(props) {
@@ -28,8 +29,8 @@ export class LiveFiddle extends Component {
 			js                    : dataOperation.appSnippet(),
 			js_pre_processor      : "babel",
 			head                  : "<meta name='viewport' content='width=device-width'>",
-			css_external          : "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css;https://cdn.rawgit.com/appbaseio/reactivesearch/0.4.3/dist/css/style.min.css;https://fonts.googleapis.com/css?family=Monoton|Raleway",
-			js_external           : "https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js;https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js;https://cdn.rawgit.com/appbaseio/reactivesearch/master/umd/ReactiveSearch.js;https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js;https://use.fontawesome.com/87f7b0243f.js"
+			css_external          : "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css;https://cdn.rawgit.com/appbaseio/reactivesearch/master/dist/css/style.min.css;https://fonts.googleapis.com/css?family=Monoton|Raleway",
+			js_external           : "https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js;https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js;https://rawgit.com/appbaseio/reactivesearch/v1.0.0-beta01/umd/reactivesearch.js;https://use.fontawesome.com/87f7b0243f.js"
 
 		};
 		return JSON.stringify(config);
@@ -58,12 +59,12 @@ export class LiveFiddle extends Component {
 				if(this.state.showJs) {
 					element = (<JsonView content={dataOperation.appSnippet()} />);
 				}
-			break;
+				break;
 			case "html":
 				if(this.state.showHtml) {
 					element = (<JsonView content={dataOperation.htmlSnippet("full")} />);
 				}
-			break;
+				break;
 			case "css":
 				if(this.state.showCSS) {
 					element = (<JsonView content={SampleCSS} />);

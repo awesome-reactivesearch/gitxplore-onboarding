@@ -5,28 +5,153 @@ export const mapping = {
 				"type": "string",
 				"index": "not_analyzed"
 			},
-			"created-on": {
+			"created": {
 				"type": "date",
-				"format": "strict_date_optional_time||epoch_millis"
+				"format": "date_time_no_millis"
+			},
+			"description": {
+				"type": "string",
+				"analyzer": "ngram_analyzer",
+				"search_analyzer": "standard"
+			},
+			"forks": {
+				"type": "integer"
+			},
+			"fullname": {
+				"type": "string",
+				"index": "not_analyzed"
 			},
 			"language": {
-				"type": "string"
+				"type": "string",
+				"fields": {
+					"raw": {
+						"type": "string",
+						"index": "not_analyzed"
+					}
+				},
+				"analyzer": "autosuggest_analyzer",
+				"search_analyzer": "standard"
+			},
+			"name": {
+				"type": "string",
+				"fields": {
+					"raw": {
+						"type": "string",
+						"index": "not_analyzed"
+					}
+				},
+				"analyzer": "ngram_analyzer",
+				"search_analyzer": "standard"
 			},
 			"owner": {
-				"type": "string"
+				"type": "string",
+				"fields": {
+					"raw": {
+						"type": "string",
+						"index": "not_analyzed"
+					}
+				},
+				"analyzer": "ngram_analyzer",
+				"search_analyzer": "standard"
 			},
-			"repo": {
-				"type": "string"
+			"pushed": {
+				"type": "date",
+				"format": "date_time_no_millis"
+			},
+			"size": {
+				"type": "integer"
 			},
 			"stars": {
 				"type": "integer"
 			},
-			"tags": {
+			"topics": {
+				"type": "string",
+				"fields": {
+					"raw": {
+						"type": "string",
+						"index": "not_analyzed"
+					}
+				},
+				"analyzer": "autosuggest_analyzer",
+				"search_analyzer": "standard"
+			},
+			"url": {
 				"type": "string",
 				"index": "not_analyzed"
 			},
-			"url": {
-				"type": "string"
+			"watchers": {
+				"type": "integer"
+			}
+		}
+	},
+	"~logs": {
+		"_ttl": {
+			"enabled": true
+		},
+		"dynamic_templates": [
+			{
+				"for_string": {
+					"mapping": {
+						"fielddata": {
+							"format": "disabled"
+						}
+					},
+					"match": "*",
+					"match_mapping_type": "string"
+				}
+			}
+		]
+	},
+	"_default_": {
+		"dynamic_templates": [
+			{
+				"for_string": {
+					"mapping": {
+						"fielddata": {
+							"format": "disabled"
+						}
+					},
+					"match": "*",
+					"match_mapping_type": "string"
+				}
+			}
+		]
+	},
+	".percolator": {
+		"_ttl": {
+			"enabled": true
+		},
+		"dynamic_templates": [
+			{
+				"for_string": {
+					"mapping": {
+						"fielddata": {
+							"format": "disabled"
+						}
+					},
+					"match": "*",
+					"match_mapping_type": "string"
+				}
+			}
+		],
+		"properties": {
+			"mode": {
+				"type": "string",
+				"index": "not_analyzed",
+				"fielddata": {
+					"format": "disabled"
+				}
+			},
+			"query": {
+				"type": "object",
+				"enabled": false
+			},
+			"type": {
+				"type": "string",
+				"index": "not_analyzed",
+				"fielddata": {
+					"format": "disabled"
+				}
 			}
 		}
 	}

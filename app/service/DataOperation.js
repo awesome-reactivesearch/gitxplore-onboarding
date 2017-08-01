@@ -7,9 +7,9 @@ class DataOperation {
 		this.user = null;
 		this.app = null;
 		this.defaultApp = {
-			"appName": "divgitxplore",
-			"username": "pRT1OUQPM",
-			"password": "4c3263ae-e543-4b4b-867a-a30014fae8d5"
+			"appName": "gitxplore-demo",
+			"username": "N8227VFYe",
+			"password": "02aaf653-7f03-4e16-883d-56b494788fae"
 		}
 		this.address = "https://accapi.appbase.io/";
 		$.ajaxSetup({
@@ -180,8 +180,7 @@ class DataOperation {
 	<!-- JavaScript -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
-	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyC-v0oz7Pay_ltypZbKasABXGiY9NlpCIY&libraries=places"></script>
-	<script type="text/javascript" src="https://cdn.rawgit.com/appbaseio/reactivesearch/master/umd/ReactiveSearch.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/appbaseio/reactivesearch/v1.0.0-beta01/umd/reactivesearch.js"></script>
 	<script src="https://use.fontawesome.com/87f7b0243f.js"></script>
 </head>
 <body>
@@ -199,7 +198,7 @@ class DataOperation {
 		let resources = [
 			'https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js',
 			'https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js',
-			'https://cdn.rawgit.com/appbaseio/reactivesearch/master/umd/ReactiveSearch.js',
+			'https://rawgit.com/appbaseio/reactivesearch/v1.0.0-beta01/umd/reactivesearch.js',
 			'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css',
 			'https://rawgit.com/appbaseio/reactivesearch/master/dist/css/style.min.css',
 			'https://fonts.googleapis.com/css?family=Monoton|Raleway',

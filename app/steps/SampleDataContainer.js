@@ -5,14 +5,20 @@ export default class SampleDataContainer extends Component {
 	renderData() {
 		return data.map((row, index) => (
 			<tr key={index}>
-				<td>{row.repo}</td>
-				<td>[{row.tags.join(', ')}]</td>
+				<td>{row.name}</td>
 				<td>{row.owner}</td>
-				<td>{row.url}</td>
-				<td>{row.stars}</td>
-				<td>{row.language}</td>
-				<td>{row['created-on']}</td>
+				<td>{row.fullname}</td>
+				<td>{row.description}</td>
 				<td>{row.avatar}</td>
+				<td>{row.url}</td>
+				<td>{row.pushed}</td>
+				<td>{row.created}</td>
+				<td>{row.size}</td>
+				<td>{row.stars}</td>
+				<td>{row.forks}</td>
+				<td>[{row.topics.join(', ')}]</td>
+				<td>{row.language}</td>
+				<td>{row.watchers}</td>
 			</tr>
 		))
 	}
@@ -29,14 +35,20 @@ export default class SampleDataContainer extends Component {
 					<table className="highlight responsive-table">
 						<thead>
 							<tr>
-								<th>repo</th>
-								<th>tags</th>
+								<th>name</th>
 								<th>owner</th>
-								<th>url</th>
-								<th>stars</th>
-								<th>language</th>
-								<th>created-on</th>
+								<th>fullname</th>
+								<th>description</th>
 								<th>avatar</th>
+								<th>url</th>
+								<th>pushed</th>
+								<th>created</th>
+								<th>size</th>
+								<th>stars</th>
+								<th>forks</th>
+								<th>topics</th>
+								<th>language</th>
+								<th>watchers</th>
 							</tr>
 						</thead>
 						<tbody>
