@@ -180,7 +180,7 @@ class DataOperation {
 	<!-- JavaScript -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
-	<script type="text/javascript" src="https://rawgit.com/appbaseio/reactivesearch/v1.0.0-beta01/umd/reactivesearch.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/appbaseio/reactivesearch/v1.0.0-beta05/umd/reactivesearch.js"></script>
 	<script src="https://use.fontawesome.com/87f7b0243f.js"></script>
 </head>
 <body>
@@ -198,7 +198,7 @@ class DataOperation {
 		let resources = [
 			'https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js',
 			'https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js',
-			'https://rawgit.com/appbaseio/reactivesearch/v1.0.0-beta01/umd/reactivesearch.js',
+			'https://rawgit.com/appbaseio/reactivesearch/v1.0.0-beta05/umd/reactivesearch.js',
 			'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css',
 			'https://rawgit.com/appbaseio/reactivesearch/master/dist/css/style.min.css',
 			'https://fonts.googleapis.com/css?family=Monoton|Raleway',

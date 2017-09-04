@@ -45,8 +45,9 @@ export class LiveExample extends Component {
 	}
 
 	resetTopic(topics) {
+		const nextTopics = topics || [];
 		this.setState({
-			topics
+			topics: nextTopics
 		});
 	}
 
@@ -119,13 +120,13 @@ export class LiveExample extends Component {
 							<div className="search-filters">
 								<MultiDropdownList
 									componentId="language"
-									appbaseField="language.raw"
+									dataField="language.raw"
 									title="Language"
 									size={100}
 								/>
 								<MultiDropdownList
 									componentId="topics"
-									appbaseField="topics.raw"
+									dataField="topics.raw"
 									title="Repo Topics"
 									defaultSelected={this.state.topics}
 									size={1000}
@@ -134,7 +135,7 @@ export class LiveExample extends Component {
 								/>
 								<SingleDropdownRange
 									componentId="pushed"
-									appbaseField="pushed"
+									dataField="pushed"
 									title="Last Active"
 									data={[
 										{"start": "now-1M", "end": "now", "label": "Last 30 days"},
@@ -144,7 +145,7 @@ export class LiveExample extends Component {
 								/>
 								<SingleDropdownRange
 									componentId="created"
-									appbaseField="created"
+									dataField="created"
 									title="Created"
 									data={[
 										{"start": "now-1y", "end": "now", "label": "Last year"},
@@ -154,7 +155,7 @@ export class LiveExample extends Component {
 								/>
 								<RangeSlider
 									componentId="stars"
-									appbaseField="stars"
+									dataField="stars"
 									title="Repo Stars"
 									showHistogram={false}
 									range={{
@@ -173,7 +174,7 @@ export class LiveExample extends Component {
 								/>
 								<RangeSlider
 									componentId="forks"
-									appbaseField="forks"
+									dataField="forks"
 									title="Repo Forks"
 									showHistogram={false}
 									range={{
@@ -197,7 +198,7 @@ export class LiveExample extends Component {
 				<div className="content">
 					<CategorySearch
 						componentId="repo"
-						appbaseField={["name", "description", "name.raw", "fullname", "owner", "topics"]}
+						dataField={["name", "description", "name.raw", "fullname", "owner", "topics"]}
 						categoryField="language.raw"
 						queryFormat="and"
 						placeholder="Search Repos"
@@ -205,7 +206,7 @@ export class LiveExample extends Component {
 					/>
 					<ResultCard
 						componentId="SearchResult"
-						appbaseField="name"
+						dataField="name"
 						noResults="No results were found, try clearing all the filters."
 						pagination={true}
 						size={6}
@@ -216,47 +217,47 @@ export class LiveExample extends Component {
 						sortOptions={[
 							{
 								label: "Best Match",
-								appbaseField: "_score",
+								dataField: "_score",
 								sortBy: "desc"
 							},
 							{
 								label: "Most Stars",
-								appbaseField: "stars",
+								dataField: "stars",
 								sortBy: "desc"
 							},
 							{
 								label: "Fewest Stars",
-								appbaseField: "stars",
+								dataField: "stars",
 								sortBy: "asc"
 							},
 							{
 								label: "Most Forks",
-								appbaseField: "forks",
+								dataField: "forks",
 								sortBy: "desc"
 							},
 							{
 								label: "Fewest Forks",
-								appbaseField: "forks",
+								dataField: "forks",
 								sortBy: "asc"
 							},
 							{
 								label: "A to Z",
-								appbaseField: "owner.raw",
+								dataField: "owner.raw",
 								sortBy: "asc"
 							},
 							{
 								label: "Z to A",
-								appbaseField: "owner.raw",
+								dataField: "owner.raw",
 								sortBy: "desc"
 							},
 							{
 								label: "Recently Updated",
-								appbaseField: "pushed",
+								dataField: "pushed",
 								sortBy: "desc"
 							},
 							{
 								label: "Least Recently Updated",
-								appbaseField: "pushed",
+								dataField: "pushed",
 								sortBy: "asc"
 							}
 						]}

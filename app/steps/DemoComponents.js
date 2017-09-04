@@ -13,7 +13,7 @@ const ReactivebaseMarkup = `
 const CategorySearchMarkup = `
 <pre style='color:#000000;background:#f1f0f0;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>CategorySearch</span>
 <span style='color:#074726; '>&#xa0;</span><span style='color:#074726; '>   componentId</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"repo"</span><span style='color:#074726; '></span>
-<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;appbaseField</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{[</span><span style='color:mediumseagreen; '>"name"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"description"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"name.raw"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"fullname"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"owner"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"topics"</span><span style='color:#074726; '>]}</span>
+<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;dataField</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{[</span><span style='color:mediumseagreen; '>"name"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"description"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"name.raw"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"fullname"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"owner"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"topics"</span><span style='color:#074726; '>]}</span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;categoryField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"language.raw"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;queryFormat</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"and"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>placeholder</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"Search Repos"</span><span style='color:#074726; '></span>
@@ -25,7 +25,7 @@ const CategorySearchMarkup = `
 const RangeSliderMarkup = `
 <pre style='color:#000000;background:#f1f0f0;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>RangeSlider</span>
 <span style='color:#074726; '>&#xa0;</span><span style='color:#074726; '>   componentId</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"stars"</span><span style='color:#074726; '></span>
-<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;appbaseField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"stars"</span><span style='color:#074726; '></span>
+<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;dataField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"stars"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>title</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"Repo Stars"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;showHistogram</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{false}</span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;range</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{{</span>
@@ -48,7 +48,7 @@ const RangeSliderMarkup = `
 const LanguageMarkup = `
 <pre style='color:#000000;background:#f1f0f0;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>MultiDropdownList</span>
 <span style='color:#074726; '>&#xa0;</span><span style='color:#074726; '>   componentId</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"language"</span><span style='color:#074726; '></span>
-<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;appbaseField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"language.raw"</span><span style='color:#074726; '></span>
+<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;dataField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"language.raw"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>title</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"Language"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>size</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{</span><span style='color:#8c0000; '>100</span><span style='color:#074726; '>}</span>
 <span style='color:#a65700; '>/></span>
@@ -58,7 +58,7 @@ const LanguageMarkup = `
 const TopicsMarkup = `
 <pre style='color:#000000;background:#f1f0f0;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>MultiDropdownList</span>
 <span style='color:#074726; '>&#xa0;</span><span style='color:#074726; '>   componentId</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"topics"</span><span style='color:#074726; '></span>
-<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;appbaseField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"topics.raw"</span><span style='color:#074726; '></span>
+<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;dataField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"topics.raw"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>title</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"Repo Topics"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;defaultSelected</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{this</span><span style='color:#8c0000; '>.</span><span style='color:#074726; '>state</span><span style='color:#8c0000; '>.</span><span style='color:#074726; '>topics}</span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>size</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{</span><span style='color:#8c0000; '>1000</span><span style='color:#074726; '>}</span>
@@ -69,18 +69,19 @@ const TopicsMarkup = `
 `;
 
 const resetTopicMarkup = `
-<pre style='color:#000000;background:#f1f0f0;'>resetTopic<span style='color:#806030; '>(</span>topics<span style='color:#806030; '>)</span> <span style='color:#806030; '>{</span>
-    <span style='color:#400000; font-weight:bold; '>this</span><span style='color:#806030; '>.</span>setState<span style='color:#806030; '>(</span><span style='color:#806030; '>{</span>
-      topics
-    <span style='color:#806030; '>}</span><span style='color:#806030; '>)</span><span style='color:#806030; '>;</span>
-<span style='color:#806030; '>}</span>
+<pre style='color:#000000;background:#f1f0f0;'>resetTopic(topics) {
+    const nextTopics = topics || [];
+    this<span style='color:mediumseagreen; '>.</span>setState({
+        topics: nextTopics
+    });
+}
 </pre>
 `
 
 const ResultCardMarkup = `
 <pre style='color:#000000;background:#f1f0f0;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>ResultCard</span>
 <span style='color:#074726; '>&#xa0;</span><span style='color:#074726; '>   componentId</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"SearchResult"</span><span style='color:#074726; '></span>
-<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;appbaseField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"name"</span><span style='color:#074726; '></span>
+<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;dataField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"name"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;noResults</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"No results were found, try clearing all the filters."</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;pagination</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{true}</span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>size</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{</span><span style='color:#8c0000; '>6</span><span style='color:#074726; '>}</span>
@@ -91,47 +92,47 @@ const ResultCardMarkup = `
     sortOptions={[
       {
         label: "Best Match",
-        appbaseField: "_score",
+        dataField: "_score",
         sortBy: "desc"
       },
       {
         label: "Most Stars",
-        appbaseField: "stars",
+        dataField: "stars",
         sortBy: "desc"
       },
       {
         label: "Fewest Stars",
-        appbaseField: "stars",
+        dataField: "stars",
         sortBy: "asc"
       },
       {
         label: "Most Forks",
-        appbaseField: "forks",
+        dataField: "forks",
         sortBy: "desc"
       },
       {
         label: "Fewest Forks",
-        appbaseField: "forks",
+        dataField: "forks",
         sortBy: "asc"
       },
       {
         label: "A to Z",
-        appbaseField: "owner<span style='color:#8c0000; '>.</span>raw",
+        dataField: "owner<span style='color:#8c0000; '>.</span>raw",
         sortBy: "asc"
       },
       {
         label: "Z to A",
-        appbaseField: "owner<span style='color:#8c0000; '>.</span>raw",
+        dataField: "owner<span style='color:#8c0000; '>.</span>raw",
         sortBy: "desc"
       },
       {
         label: "Recently Updated",
-        appbaseField: "pushed",
+        dataField: "pushed",
         sortBy: "desc"
       },
       {
         label: "Least Recently Updated",
-        appbaseField: "pushed",
+        dataField: "pushed",
         sortBy: "asc"
       }
     ]}
@@ -142,7 +143,7 @@ const ResultCardMarkup = `
 const lastActiveMarkup = `
 <pre style='color:#000000;background:#f1f0f0;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>SingleDropdownRange</span>
 <span style='color:#074726; '>&#xa0;</span><span style='color:#074726; '>   componentId</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"pushed"</span><span style='color:#074726; '></span>
-<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;appbaseField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"pushed"</span><span style='color:#074726; '></span>
+<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;dataField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"pushed"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>title</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"Last Active"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>data</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{[</span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{</span><span style='color:mediumseagreen; '>"start"</span><span style='color:#074726; '>: </span><span style='color:mediumseagreen; '>"now-1M"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"end"</span><span style='color:#074726; '>: </span><span style='color:mediumseagreen; '>"now"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"label"</span><span style='color:#074726; '>: </span><span style='color:mediumseagreen; '>"Last 30 days"</span><span style='color:#074726; '>},</span>
@@ -156,7 +157,7 @@ const lastActiveMarkup = `
 const createdMarkup = `
 <pre style='color:#000000;background:#f1f0f0;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>SingleDropdownRange</span>
 <span style='color:#074726; '>&#xa0;</span><span style='color:#074726; '>   componentId</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"created"</span><span style='color:#074726; '></span>
-<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;appbaseField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"created"</span><span style='color:#074726; '></span>
+<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;dataField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"created"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>title</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"Created"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>data</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{[</span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;{</span><span style='color:mediumseagreen; '>"start"</span><span style='color:#074726; '>: </span><span style='color:mediumseagreen; '>"now-1y"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"end"</span><span style='color:#074726; '>: </span><span style='color:mediumseagreen; '>"now"</span><span style='color:#074726; '>, </span><span style='color:mediumseagreen; '>"label"</span><span style='color:#074726; '>: </span><span style='color:mediumseagreen; '>"Last year"</span><span style='color:#074726; '>},</span>
@@ -170,7 +171,7 @@ const createdMarkup = `
 const forksMarkup = `
 <pre style='color:#000000;background:#f1f0f0;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>RangeSlider</span>
 <span style='color:#074726; '>&#xa0;</span><span style='color:#074726; '>   componentId</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"forks"</span><span style='color:#074726; '></span>
-<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;appbaseField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"forks"</span><span style='color:#074726; '></span>
+<span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;dataField</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"forks"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;</span><span style='color:#074726; '>title</span><span style='color:#806030; '>=</span><span style='color:mediumseagreen; '>"Repo Forks"</span><span style='color:#074726; '></span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;showHistogram</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{false}</span>
 <span style='color:#074726; '>&#xa0;&#xa0;&#xa0;&#xa0;range</span><span style='color:#806030; '>=</span><span style='color:#074726; '>{{</span>
