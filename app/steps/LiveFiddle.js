@@ -4,7 +4,6 @@ import { SampleCSS } from "../service/SampleCSS";
 import { JsonView } from "../others/JsonView";
 import { Tabs, Tab } from "react-bootstrap";
 import LivePen from "./LivePen";
-import LiveExample from "./LiveExample";
 
 export class LiveFiddle extends Component {
 	constructor(props) {
