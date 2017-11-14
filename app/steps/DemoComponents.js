@@ -206,7 +206,7 @@ export default class DemoComponents extends Component {
 						</div>
 						<div className="right-col">
 							<p><strong>ReactiveBase</strong> is the first component in a ReactiveSearch app, it connects the UI layer with the appbase.io DB service, where we indexed the GitHub dataset.</p>
-							<p>You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/v1/getting-started/ReactiveBase.html" target="_blank">here</a>.</p>
+							<p>You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/getting-started/reactivebase.html" target="_blank">here</a>.</p>
 						</div>
 					</div>
 
@@ -218,7 +218,7 @@ export default class DemoComponents extends Component {
 						</div>
 						<div className="right-col">
 							<img src="http://i.imgur.com/bPsogk9.png" />
-							<p><strong>CategorySearch</strong> sensor component creates a category search UI widget with an autocomplete functionality. It is used for applying full-text search across one or more fields. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/v1/search-components/CategorySearch.html" target="_blank">here</a>.</p>
+							<p><strong>CategorySearch</strong> sensor component creates a category search UI widget with an autocomplete functionality. It is used for applying full-text search across one or more fields. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/search-components/categorysearch.html" target="_blank">here</a>.</p>
 						</div>
 					</div>
 
@@ -230,7 +230,7 @@ export default class DemoComponents extends Component {
 						</div>
 						<div className="right-col">
 							<img src="http://i.imgur.com/zciMM8V.png" />
-							<p><strong>MultiDropdownList</strong> sensor component creates a multiple select dropdown based list UI widget. It is used for filtering results based on the current selection from a list of items. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/v1/components/MultiDropdownList.html" target="_blank">here</a>.</p>
+							<p><strong>MultiDropdownList</strong> sensor component creates a multiple select dropdown based list UI widget. It is used for filtering results based on the current selection from a list of items. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/basic-components/multidropdownlist.html" target="_blank">here</a>.</p>
 						</div>
 					</div>
 
@@ -246,7 +246,7 @@ export default class DemoComponents extends Component {
 						</div>
 						<div className="right-col">
 							<img src="http://i.imgur.com/uijLnWa.png" />
-							<p>Another <strong>MultiDropdownList</strong> sensor component for <code>topics</code>. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/v1/components/MultiDropdownList.html" target="_blank">here</a>.</p>
+							<p>Another <strong>MultiDropdownList</strong> sensor component for <code>topics</code>. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/basic-components/multidropdownlist.html" target="_blank">here</a>.</p>
 						</div>
 					</div>
 
@@ -258,7 +258,7 @@ export default class DemoComponents extends Component {
 						</div>
 						<div className="right-col">
 							<img src="http://i.imgur.com/Ljewqak.png" />
-							<p><strong>SingleDropdownRange</strong> creates a dropdown UI component which can accept a range associated with a particular filter. Read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/v1/components/SingleDropdownRange.html" target="_blank">here</a>.</p>
+							<p><strong>SingleDropdownRange</strong> creates a dropdown UI component which can accept a range associated with a particular filter. Read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/basic-components/singledropdownrange.html" target="_blank">here</a>.</p>
 						</div>
 					</div>
 
@@ -270,7 +270,7 @@ export default class DemoComponents extends Component {
 						</div>
 						<div className="right-col">
 							<img src="http://i.imgur.com/eXdC14l.png" />
-							<p>Another <strong>SingleDropdownRange</strong> dropdown component. Read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/v1/components/SingleDropdownRange.html" target="_blank">here</a>.</p>
+							<p>Another <strong>SingleDropdownRange</strong> dropdown component. Read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/basic-components/singledropdownrange.html" target="_blank">here</a>.</p>
 						</div>
 					</div>
 
@@ -282,7 +282,7 @@ export default class DemoComponents extends Component {
 						</div>
 						<div className="right-col">
 							<img src="http://i.imgur.com/2xMaJmu.png" />
-							<p><strong>RangeSlider</strong> creates a numeric range based UI component. We will use it to create a filter for the number of stars on repos. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/v1/components/RangeSlider.html" target="_blank">here</a>.</p>
+							<p><strong>RangeSlider</strong> creates a numeric range based UI component. We will use it to create a filter for the number of stars on repos. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/basic-components/rangeslider.html" target="_blank">here</a>.</p>
 						</div>
 					</div>
 
@@ -294,7 +294,7 @@ export default class DemoComponents extends Component {
 						</div>
 						<div className="right-col">
 							<img src="http://i.imgur.com/YSd1007.png" />
-							<p>Another <strong>RangeSlider</strong> component for <code>forks</code>. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/v1/components/RangeSlider.html" target="_blank">here</a>.</p>
+							<p>Another <strong>RangeSlider</strong> component for <code>forks</code>. You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/basic-components/rangeslider.html" target="_blank">here</a>.</p>
 						</div>
 					</div>
 
@@ -307,7 +307,7 @@ export default class DemoComponents extends Component {
 						<div className="right-col">
 							<img src="http://i.imgur.com/YIaLAxt.png" />
 							<p><strong>ResultCard</strong> renders the available listings based on the applied filters in a card format and comes with a built-in support for pagination. Notice the use of <code>react</code> prop for specifying how to filter the data. Also as an added bonus it lets us easily add sorting on the results via <code>sortOptions</code> prop.
-								You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/v1/search-components/ResultCard.html" target="_blank">here</a>.</p>
+								You can read more about it in the docs <a href="https://opensource.appbase.io/reactive-manual/search-components/resultcard.html" target="_blank">here</a>.</p>
 						</div>
 					</div>
 				</div>
